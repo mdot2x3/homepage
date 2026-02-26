@@ -1,3 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
 body {
-  background-color: grey;
+  background-color: white;
+}
+
+header {
+  border: 1px dotted black;
+}
+.header-shape {
+  height: 320px;
+  background-color: #0891b2;
+}
+
+main {
+  border: 1px dotted black;
+}
+.main-content {
+  height: 320px;
+  background-color: whitesmoke;
+}
+
+footer {
+  border: 1px dotted black;
+}
+.footer-content {
+  height: 320px;
+  background-color: #0891b2;
+}
+.contact img,
+svg {
+  width: 20px;
 }
