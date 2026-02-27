@@ -13,9 +13,19 @@
   </head>
 
   <body>
-    <header>
-      <div class="header-shape"></div>
+    <header class="hero-header">
       <div class="header-content"></div>
+      <picture class="profile-image-top">
+        <source
+          media="(min-width: 1024px)"
+          srcset="assets/profile_top(l).jpg"
+        />
+        <source media="(min-width: 768px)" srcset="assets/profile_top(m).jpg" />
+        <img
+          src="assets/profile_top(s).jpg"
+          alt="A Corgi in front of a laptop"
+        />
+      </picture>
     </header>
 
     <main>

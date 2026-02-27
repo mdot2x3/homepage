@@ -12,16 +12,54 @@ body {
 header {
   border: 1px dotted black;
 }
-.header-shape {
-  height: 320px;
+.hero-header {
+  position: relative;
+  /* use padding to create the space where the blue background lives */
+  padding-top: 25px;
+  /* increase this to move the "About Me" start point down */
+  padding-bottom: 50px;
+  /* important: allows the photo to hang off the edge */
+  overflow: visible;
+}
+.hero-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* increase this to make the blue shape cover more area */
+  /* only covers the top 80% of the header, will always maintain that proportion relative to the content inside */
+  height: 85%;
   background-color: #0891b2;
+  transform: skewY(-30deg);
+  transform-origin: top left;
+  z-index: -1;
+  /* adds the shadow only to the visible edges of the shape */
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+}
+.profile-image-top {
+  display: block;
+  /* limits the size of the image */
+  width: 250px;
+  /* centers the image horizontally */
+  margin: 0 auto;
+  position: relative;
+  /* ensures it stays above the blue background */
+  z-index: 2;
+}
+.profile-image-top img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 main {
   border: 1px dotted black;
 }
 .main-content {
-  height: 320px;
+  min-height: 1200px;
   background-color: whitesmoke;
 }
 
@@ -29,7 +67,7 @@ footer {
   border: 1px dotted black;
 }
 .footer-content {
-  height: 320px;
+  min-height: 600px;
   background-color: #0891b2;
 }
 .contact img,
