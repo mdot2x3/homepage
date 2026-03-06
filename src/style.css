@@ -174,10 +174,65 @@ footer {
   border: 1px dotted black;
 }
 .footer-content {
-  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 475px;
   background-color: #0891b2;
 }
-.contact img,
-svg {
-  width: 20px;
+.footer-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+  padding-top: 1rem;
+}
+.contact-text {
+  max-width: 600px;
+  padding: 1.5rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.contact-address {
+  padding-top: 2rem;
+}
+.contact-phone,
+.contact-email {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  gap: 10px;
+}
+.phone-email-pair {
+  padding-top: 2rem;
+}
+.phone-email-icons {
+  display: none;
+}
+.contact-address,
+.contact-phone,
+.contact-email {
+  font-size: 1rem;
+}
+.contact-text svg {
+  width: 30px;
+  fill: white;
+}
+.contact-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 50px;
+}
+/* targets the <picture> element */
+.profile-image-bottom {
+  width: 320px;
+}
+/* targets the actual <img> element */
+.profile-image-bottom img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
 }
