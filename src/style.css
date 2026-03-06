@@ -108,6 +108,7 @@ body {
 
 main {
   padding-top: 6rem;
+  padding-bottom: 8rem;
 }
 .main-content {
   display: grid;
@@ -122,10 +123,14 @@ main {
   color: black;
   text-align: center;
 }
+.cards-container {
+  display: grid;
+  gap: 3rem;
+}
 .project-card {
   min-height: 325px;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   display: flex;
   flex-direction: column;
