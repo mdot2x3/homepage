@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -37,6 +37,7 @@ header {
   /* adds the shadow only to the visible edges of the shape */
   filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
 }
+/* targets the <picture> element */
 .profile-image-top {
   display: block;
   /* limits the size of the image */
@@ -47,12 +48,29 @@ header {
   /* ensures it stays above the blue background */
   z-index: 2;
 }
+/* targets the actual <img> element */
 .profile-image-top img {
   width: 100%;
   height: auto;
   display: block;
   border: none;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+.profile-overlay {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  color: #fff;
+  font-size: 1.7rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  /* overlay doesn't block image interaction */
+  pointer-events: none;
+}
+.profile-overlay h1 {
+  font-family: "Playfair Display", serif;
 }
 
 main {
@@ -72,5 +90,9 @@ footer {
 }
 .contact img,
 svg {
+  width: 20px;
+}
+
+.social-icons {
   width: 20px;
 }
