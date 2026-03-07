@@ -9,27 +9,18 @@ body {
   background-color: white;
 }
 
-.hero-header {
+.header {
   position: relative;
   /* use padding to create the space where the blue background lives */
-  padding-top: 25px;
-  /* increase this to move the "About Me" start point down */
-  padding-bottom: 50px;
-  /* important: allows the photo to hang off the edge */
-  overflow: visible;
 }
-.hero-header::before {
-  content: "";
+.header-bg {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   /* increase this to make the blue shape cover more area */
-  /* only covers the top 80% of the header, will always maintain that proportion relative to the content inside */
-  height: 85%;
+  height: 50%;
   background-color: #0891b2;
-  transform: skewY(-30deg);
   transform-origin: top left;
+  transform: skewY(-30deg);
   z-index: -1;
   /* adds the shadow only to the visible edges of the shape */
   filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
@@ -41,9 +32,10 @@ body {
   width: 250px;
   /* centers the image horizontally */
   margin: 0 auto;
+  padding-top: 2rem;
   position: relative;
   /* ensures it stays above the blue background */
-  z-index: 2;
+  z-index: 1;
 }
 /* targets the actual <img> element */
 .profile-image-top img {
@@ -59,7 +51,7 @@ body {
   left: 0;
   width: 100%;
   text-align: center;
-  z-index: 3;
+  z-index: 2;
   color: #fff;
   font-size: 1.7rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -75,8 +67,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -10px;
-  z-index: 2;
+  padding-top: 3rem;
+  z-index: 1;
 }
 .about-me {
   display: flex;
@@ -102,12 +94,12 @@ body {
   display: flex;
   gap: 15px;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 1.5rem;
   width: 35px;
 }
 
 main {
-  padding-top: 6rem;
+  padding-top: 5rem;
   padding-bottom: 8rem;
 }
 .main-content {
@@ -170,14 +162,11 @@ main {
   width: 20px;
 }
 
-footer {
-  border: 1px dotted black;
-}
 .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 475px;
+  min-height: 460px;
   background-color: #0891b2;
 }
 .footer-content h2 {
