@@ -317,3 +317,237 @@ svg {
     margin-left: 5rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .header-bg {
+    /* increase this to make the blue shape cover more area */
+    height: 50%;
+    transform: skewY(-15deg);
+  }
+  .header-content {
+    display: block;
+  }
+  .profile-overlay {
+    top: 50px;
+    padding-right: 525px;
+  }
+  /* targets the <picture> element */
+  .profile-image-top {
+    float: left;
+    /* limits the size of the image */
+    width: 400px;
+    /* centers the image horizontally */
+    margin: 4rem;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0rem;
+  }
+  .about-me h2 {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .about-me {
+    display: block;
+    align-items: unset;
+    background-color: white;
+    max-width: 1200px;
+    height: 375px;
+    margin-top: 50px;
+    margin-right: 75px;
+    margin-left: 450px;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color: #565656;
+    line-height: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  }
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 3.5rem;
+    margin-left: 375px;
+    width: 25px;
+  }
+
+  .main-content {
+    padding: 4rem;
+    padding-bottom: 0rem;
+  }
+  .main-content h2 {
+    margin-bottom: -1.5rem;
+    text-align: left;
+  }
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card-header h3 {
+    padding-left: 0px;
+  }
+
+  footer {
+    display: flex;
+    background-color: #0891b2;
+    padding: 2rem;
+    padding-bottom: 0rem;
+  }
+  .footer-content h2 {
+    padding-left: 1.5rem;
+  }
+  .footer-content {
+    display: block;
+    max-width: 350px;
+  }
+  .phone-email-icons {
+    display: inline-block;
+  }
+  .contact-social-icons {
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+    width: 30px;
+  }
+  .profile-image-bottom {
+    width: 550px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header-bg {
+    /* increase this to make the blue shape cover more area */
+    height: 80%;
+    transform: skewY(-10deg);
+  }
+  .header-content {
+    display: block;
+  }
+  .profile-overlay {
+    top: 90px;
+    padding-right: 1075px;
+    font-size: 3rem;
+  }
+  /* targets the <picture> element */
+  .profile-image-top {
+    float: left;
+    /* limits the size of the image */
+    width: 650px;
+    /* centers the image horizontally */
+    margin: 6rem;
+    margin-top: 4rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0rem;
+  }
+  .about-me h2 {
+    text-align: left;
+    margin-bottom: 50px;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    font-size: 3rem;
+  }
+  .about-me {
+    display: block;
+    align-items: unset;
+    background-color: white;
+    max-width: 1100px;
+    height: 625px;
+    margin-top: 70px;
+    margin-right: 75px;
+    margin-left: 700px;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color: #565656;
+    line-height: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  }
+  .about-me p {
+    padding-left: 3rem;
+    max-width: 800px;
+    font-size: 1.75rem;
+    line-height: 2;
+  }
+  .social-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 900px;
+    width: 45px;
+  }
+
+  .main-content {
+    padding: 6rem;
+    padding-bottom: 0rem;
+  }
+  .main-content h2 {
+    margin-bottom: -1.5rem;
+    text-align: left;
+  }
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 80rem;
+  }
+  .card-header h3 {
+    padding-left: 0px;
+  }
+  .card-screenshot {
+    font-size: 3rem;
+    min-height: 25rem;
+  }
+  .card-content h3 {
+    font-size: 1.75rem;
+  }
+  .card-content {
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+  .card-icons img,
+  svg {
+    width: 30px;
+  }
+
+  footer {
+    display: flex;
+    background-color: #0891b2;
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-bottom: 0rem;
+  }
+  .footer-content h2 {
+    width: 500px;
+    padding-left: 1.5rem;
+    font-size: 4rem;
+  }
+  .footer-content {
+    display: block;
+    max-width: 350px;
+    line-height: 1.5;
+  }
+  .contact-text,
+  .contact-address,
+  .contact-phone,
+  .contact-email {
+    width: 500px;
+    font-size: 1.75rem;
+  }
+  .phone-email-icons {
+    display: inline-block;
+  }
+  .contact-social-icons {
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+    width: 50px;
+  }
+  .profile-image-bottom {
+    width: 900px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 30rem;
+  }
+}
