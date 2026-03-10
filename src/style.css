@@ -158,7 +158,8 @@ main {
   gap: 10px;
   margin-bottom: 0.5rem;
 }
-.card-icons img {
+.card-icons img,
+svg {
   width: 20px;
 }
 
@@ -275,7 +276,18 @@ main {
     display: none;
   }
 
+  .main-content {
+    padding: 4rem;
+    padding-top: 0rem;
+  }
+  .main-content h2 {
+    margin-bottom: -1.5rem;
+    text-align: left;
+  }
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card-header h3 {
+    padding-left: 0px;
   }
 }
