@@ -238,7 +238,7 @@ svg {
   }
   .profile-overlay {
     top: 50px;
-    left: 30px;
+    padding-left: 30px;
   }
   /* targets the <picture> element */
   .profile-image-top {
@@ -289,5 +289,31 @@ svg {
   }
   .card-header h3 {
     padding-left: 0px;
+  }
+
+  footer {
+    display: flex;
+    background-color: #0891b2;
+    padding: 2rem;
+    padding-bottom: 0rem;
+  }
+  .footer-content h2 {
+    padding-left: 1.5rem;
+  }
+  .footer-content {
+    display: block;
+    max-width: 350px;
+  }
+  .phone-email-icons {
+    display: inline-block;
+  }
+  .contact-social-icons {
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+    width: 30px;
+  }
+  .profile-image-bottom {
+    width: 275px;
+    margin-left: 5rem;
   }
 }
